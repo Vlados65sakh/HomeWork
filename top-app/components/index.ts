@@ -1,4 +1,3 @@
-export * from './Htag/Htag';
-export * from './Button/Button';
-export * from './P/P';
-export * from './Tag/Tag';
+export * from './Typography/Typography';
+export * from './Card/Card';
+export * from './Like/Like';
