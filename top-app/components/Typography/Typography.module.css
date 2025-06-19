@@ -1,0 +1,54 @@
+
+/*Это описание снизу и сверху */
+.h1{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+}
+/*Это основной текст*/
+.h2{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 5px;
+    width: 270px;              /* ширина карточки = ширине картинки */
+
+}
+
+/*Это под основным текстом*/
+.h3{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    margin-top: 16px;
+    width: 330px;              /* ширина карточки = ширине картинки */
+
+}
+
+
+/*А это заголовок*/
+.h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 0px;
+}
+
+.category{
+   color: #4B4B4B;
+}
+
+.dateDescription {
+    color: #6E6E6E;
+}
+
+
+.title{
+    color: #2C2C2C;
+}
+
+.href{
+    color: #1473E6;
+}
+
