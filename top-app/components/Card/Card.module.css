@@ -1,0 +1,39 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;          /* если вдруг что-то "вылезает" — скрыть */
+}
+
+.titleWrapper {
+    margin-top: 8px; /* отступ сверху */
+}
+
+.topRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.category {
+    /* необязательно, но полезно для контроля отступов между элементами */
+    /*margin-top: 16px;*/
+    display: inline-flex;
+    align-items: center;    /* если вдруг разный line‑height */
+    gap: 0.3rem;            /* отступ между Front‑end и • 1 месяц назад */
+}
+
+.like {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    cursor: pointer;
+    color: #6E6E6E;
+}
+
+.like svg {
+    height: 20px;
+    width: 16px;
+}
+
