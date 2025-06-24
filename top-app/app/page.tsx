@@ -1,6 +1,6 @@
 'use client';
 
-import {Card} from "@/components";
+import {Card, Like_Changed} from "@/components";
 
 
 
@@ -10,6 +10,7 @@ export default function Home() {
         <div>
             <div style={{ display: 'flex'}}>
                 <Card />
+                <Like_Changed/>
             </div>
 
         </div>
