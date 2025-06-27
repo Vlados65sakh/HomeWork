@@ -10,7 +10,7 @@ export default function Home() {
         <div>
             <div style={{ display: 'flex'}}>
                 <Card />
-                <Like_Changed/>
+                <Like_Changed isActive={false} />
             </div>
 
         </div>

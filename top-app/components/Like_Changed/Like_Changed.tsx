@@ -1,3 +1,6 @@
+'use client';
+
+
 import {JSX, useState} from "react";
 import styles from './Like_Changed.module.css';
 import {LikeChangedProps} from "./Like_Changed.props";

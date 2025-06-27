@@ -1,3 +1,5 @@
+'use client';
+
 import {useState} from "react";
 import CardIcon from './mini.svg';
 import LikeIcon from '../Like/like.svg';
