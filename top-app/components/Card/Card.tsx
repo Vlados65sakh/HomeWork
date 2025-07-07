@@ -1,17 +1,24 @@
+'use client';
+
 import {useState} from "react";
 import CardIcon from './mini.svg';
 import LikeIcon from '../Like/like.svg';
 import {Typography} from "../Typography/Typography";
 import styles from "./Card.module.css";
 import Link from "next/link";
+import {CardProps} from "@/components/Card/Card.props";
 
 
-export const Card = () => {
+export const Card: React.FC<CardProps> = ({ className, ...props }) => {
 
-    const [counter, setCounter] = useState<number>(0);
+    const [counter, setCounter] = useState(0);
 
     return (
-        <div className={styles.card}>
+        <div
+            /* объединяем свой стиль и переданный извне */
+            className={`${styles.card} ${className || ""}`}
+            {...props}
+        >
             <CardIcon className={styles.image}/>
 
             {/* Текстовая часть */}
