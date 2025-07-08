@@ -6,9 +6,9 @@ import styles from './Like_Changed.module.css';
 import {LikeChangedProps} from "./Like_Changed.props";
 import cn from "classnames";
 import LikeIcon from './like.svg';
-import Rectangle from './Rectangle.svg'
+import Rectangle from './Rectangle.svg';
 
-export const Like_Changed = ({isActive = false,className, ...props}: LikeChangedProps): JSX.Element => {
+export const Like_Changed = ({isActive = false, ...props}: LikeChangedProps): JSX.Element => {
     const [active, setActive] = useState<boolean>(isActive);
 
 
