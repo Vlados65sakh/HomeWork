@@ -1,9 +1,13 @@
-import {HeaderProps} from "./Header.props";
 import cn from "classnames";
 import styles from "@/components/Main/Header/Header.module.css";
 import HeaderIcon from "@/components/Main/Header/Header.svg";
+import {ReactElement} from "react";
 
-export const Header = ({className, ...props}: HeaderProps): React.JSX.Element => {
+interface HeaderProps extends React.HTMLAttributes<HTMLDivElement> {
+    className?: string;
+}
+
+export const Header = ({className, ...props}: HeaderProps): ReactElement => {
     return (
         <div {...props} className={cn(styles.header, className)}>
             .my_blog
@@ -11,6 +15,5 @@ export const Header = ({className, ...props}: HeaderProps): React.JSX.Element =>
                 <HeaderIcon/>
             </div>
         </div>
-
     );
 };
