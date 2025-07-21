@@ -1,3 +1,4 @@
+
 import {notFound} from "next/navigation";
 import {cache} from "react";
 import {getPostId} from "@/api/get";
@@ -23,3 +24,4 @@ export default async function GetPageById({ params }: Props) {
         </div>
     );
 }
+

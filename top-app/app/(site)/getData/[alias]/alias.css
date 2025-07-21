@@ -1,0 +1,22 @@
+/* app/[alias]/page.module.css */
+.post-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas:
+    "header"
+    "body";
+}
+.post-grid__header { grid-area: header; }
+.post-grid__body { grid-area: body; }
+
+/* Responsive */
+@media (min-width: 768px) {
+    .post-grid {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "header body";
+    }
+}
+.post-grid__author {
+    font-size: 0.9rem;
+    color: #555;
+}
