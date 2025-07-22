@@ -55,7 +55,7 @@ export const Card: React.FC<CardProps> = ({ className, ...props }) => {
                     3 минуты
                 </Typography>
 
-                <Link href="/read">
+                <Link href="/getData/1">
                     <Typography tag="h1" color="href">Читать →</Typography>
                 </Link>
             </div>
