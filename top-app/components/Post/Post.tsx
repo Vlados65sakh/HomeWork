@@ -4,10 +4,8 @@ import {useState} from "react";
 import PostIcon from './post.svg';
 import {Typography} from "../Typography/Typography";
 import styles from "./Post.module.css";
-import Link from "next/link";
 import {CardProps} from "@/components/Card/Card.props";
 import LikeIcon from '../Like/like.svg';
-
 
 
 export const Post: React.FC<CardProps> = ({ className, ...props }) => {
