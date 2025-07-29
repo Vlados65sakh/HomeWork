@@ -1,0 +1,63 @@
+.card {
+    display: grid;
+    /*flex-direction: column;*/
+    /*overflow: hidden;          !* если вдруг что-то "вылезает" — скрыть *!*/
+}
+
+.wrapper {
+    margin-left: 25px; /* отступ сверху */
+}
+
+.titleWrapper {
+    display: grid;
+    grid-template-columns: 650px;
+    margin-left: 25px; /* отступ сверху */
+    margin-bottom: 100px;
+
+    /* отступ сверху */
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+
+    /* --c-black-20 */
+    color: #6E6E6E;
+}
+
+.top {
+
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+
+    /* --c-black */
+    color: #2C2C2C;
+    margin-left: 25px;
+    margin-bottom: 10px;
+
+}
+
+.category {
+    display: grid;
+    grid-template-columns: 55px 10px 80px 15px 60px 15px 20px;
+    align-items: center;
+    justify-content: left;
+    margin-left: 25px;
+}
+
+.like {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    cursor: pointer;
+    color: #6E6E6E;
+}
+
+.like svg {
+    height: 20px;
+    width: 16px;
+}
+
