@@ -6,6 +6,8 @@ import {Typography} from "../Typography/Typography";
 import styles from "./Post.module.css";
 import {CardProps} from "@/components/Card/Card.props";
 import LikeIcon from '../Like/like.svg';
+import {Comments} from '../Comennts/Comments';
+import {ReviewForm} from "@/components";
 
 
 export const Post: React.FC<CardProps> = ({ className, ...props }) => {
@@ -70,6 +72,10 @@ export const Post: React.FC<CardProps> = ({ className, ...props }) => {
                 Грид представляет собой пересекающийся набор горизонтальных и вертикальных линий, образующих колонки и строки.
                 Элементы могут быть помещены в грид в пределах линий этих колонок и строк. Грид имеет следующие особенности:
             </div>
+
+            <Comments/>
+
+            <ReviewForm />
 
         </div>
     );
