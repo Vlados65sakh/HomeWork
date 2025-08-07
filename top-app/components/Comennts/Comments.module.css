@@ -1,0 +1,36 @@
+
+.TextUp {
+    margin-left: 25px;
+}
+
+.top {
+
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+
+    /* --c-black */
+    color: #2C2C2C;
+    margin-left: 25px;
+    margin-bottom: 10px;
+
+}
+
+.text {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+    display: flex;
+    align-items: center;
+
+    /* --c-black-30 */
+    color: #4B4B4B;
+    margin-left: 25px;
+
+
+
+}
