@@ -5,3 +5,7 @@ export * from '@/components/Like_Changed/Like_Changed';
 export * from './Main/Header/Header';
 export * from './Post/Post';
 export * from './Comennts/Comments';
+export * from './Button/Button';
+export * from './Textarea/Textarea';
+export * from './Input/Input';
+export * from './ReviewForm/ReviewForm';

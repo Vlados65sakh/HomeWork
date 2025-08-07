@@ -7,6 +7,7 @@ import styles from "./Post.module.css";
 import {CardProps} from "@/components/Card/Card.props";
 import LikeIcon from '../Like/like.svg';
 import {Comments} from '../Comennts/Comments';
+import {ReviewForm} from "@/components";
 
 
 export const Post: React.FC<CardProps> = ({ className, ...props }) => {
@@ -73,6 +74,9 @@ export const Post: React.FC<CardProps> = ({ className, ...props }) => {
             </div>
 
             <Comments/>
+
+            <ReviewForm />
+
         </div>
     );
 };
