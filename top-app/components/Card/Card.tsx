@@ -7,17 +7,17 @@ import {Typography} from "../Typography/Typography";
 import styles from "./Card.module.css";
 import Link from "next/link";
 import {CardProps} from "@/components/Card/Card.props";
+import {motion, Variants} from "framer-motion";
 
 
-export const Card: React.FC<CardProps> = ({ className, ...props }) => {
+export const Card: React.FC<CardProps & { variants?: Variants }> = ({ className, variants, }) => {
 
     const [counter, setCounter] = useState(0);
 
     return (
-        <div
-            /* объединяем свой стиль и переданный извне */
-            className={`${styles.card} ${className || ""}`}
-            {...props}
+        <motion.div
+            variants={variants}
+            className={`${styles.card} ${className ?? ''}`}
         >
             <CardIcon className={styles.image}/>
 
@@ -59,6 +59,6 @@ export const Card: React.FC<CardProps> = ({ className, ...props }) => {
                     <Typography tag="h1" color="href">Читать →</Typography>
                 </Link>
             </div>
-        </div>
+        </motion.div>
     );
 };
